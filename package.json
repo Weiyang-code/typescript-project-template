@@ -1,0 +1,48 @@
+{
+  "name": "typescript-project-template",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack",
+    "dev": "npx cross-env NODE_ENV=development tsx watch -r tsconfig-paths/register ./src/app.ts",
+    "start": "NODE_ENV=production node --enable-source-maps ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/logger": "^0.0.5",
+    "@types/mongoose": "^5.11.96",
+    "@types/pg": "^8.20.0",
+    "@typescript-eslint/eslint-plugin": "^8.58.2",
+    "@typescript-eslint/parser": "^8.58.2",
+    "copy-webpack-plugin": "^14.0.0",
+    "eslint": "^10.2.0",
+    "globals": "^17.5.0",
+    "ts-loader": "^9.5.7",
+    "tsconfig-paths": "^4.2.0",
+    "tsconfig-paths-webpack-plugin": "^4.2.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2",
+    "typescript-eslint": "^8.58.2",
+    "webpack": "^5.106.1",
+    "webpack-cli": "^7.0.2",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "dependencies": {
+    "config": "^4.4.1",
+    "cors": "^2.8.6",
+    "dayjs": "^1.11.20",
+    "express": "^4.18.2",
+    "express-list-endpoints": "^7.1.1",
+    "knex": "^3.2.9",
+    "logger": "^0.0.1",
+    "mongoose": "^9.4.1",
+    "pg": "^8.20.0"
+  }
+}
